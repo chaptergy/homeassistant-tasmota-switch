@@ -1,0 +1,33 @@
+{
+  "config": {
+    "title": "Tasmota Switch",
+    "step": {
+      "user": {
+        "title": "Tasmota Switch",
+        "description": "Please enter an IP address or a domain. You can also specify a custom name for the device if you like, otherwise the name set in Tasmota will be used.",
+        "data": {
+          "name": "Custom Name",
+          "url": "URL"
+        }
+      },
+      "auth_info": {
+        "title": "Tasmota Switch",
+        "description": "A webUI password is set. Please provide username (usually admin) and password.",
+        "data": {
+          "name": "Custom Name",
+          "url": "URL",
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "connection": "Unable to connect to device.",
+      "authentication": "Unable to log in with provided credentials.",
+      "generic": "An error occurred while attempting to connect."
+    },
+    "abort": {
+      "single_instance_allowed": "Only a single configuration of Tasmota Switch is allowed."
+    }
+  }
+}

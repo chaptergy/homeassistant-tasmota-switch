@@ -1,0 +1,10 @@
+{
+  "domain": "tasmota_switch",
+  "name": "Tasmota Switch",
+  "documentation": "https://github.com/chaptergy/homeassistant-tasmota-switch",
+  "dependencies": [],
+  "config_flow": true,
+  "requirements": [
+    "tasmotadevicecontroller==0.0.8"
+  ]
+}
