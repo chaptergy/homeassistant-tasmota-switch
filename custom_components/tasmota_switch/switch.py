@@ -5,7 +5,7 @@ from asyncio import run_coroutine_threadsafe
 from tasmotadevicecontroller import TasmotaDevice
 from tasmotadevicecontroller import tasmota_commands as cmd
 from tasmotadevicecontroller import tasmota_types as t
-from homeassistant.components.switch import SwitchDevice
+from homeassistant.components.switch import SwitchEntity
 from homeassistant.const import CONF_NAME, CONF_PASSWORD, CONF_URL, CONF_USERNAME
 
 from .const import DOMAIN_DATA, ICON, DOMAIN
@@ -60,7 +60,7 @@ async def async_setup_entry(hass, config_entry, async_add_devices):
     )
 
 
-class TasmotaBinarySwitch(SwitchDevice):
+class TasmotaBinarySwitch(SwitchEntity):
     """Tasmota switch class."""
 
     def __init__(self, hass, tasmotaDevice, name, deviceInfo):
